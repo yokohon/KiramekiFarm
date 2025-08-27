@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* ﾊﾝﾊﾞｰｶﾞｰﾒﾆｭｰ */
+.hamburger-menu-list {
+    background-color: #168352;
+}
+.hamburger-menu-list li {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* ｷｬｯﾁｺﾋﾟｰ*/
+.cover-catch {
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+}
+.cover-text {
+    color: #000;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
