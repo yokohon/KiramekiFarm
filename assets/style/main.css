@@ -1,6 +1,13 @@
 @charset "UTF-8";
 
+body {
+    font-family: "Noto Sans JP" , "Montserrat" , sans-serif;
+    line-height: 1.75;
+    color: #333;
+}
+
 a {
+    color: #333;
     text-decoration: none;
 }
 
@@ -14,14 +21,70 @@ li {
     list-style: none;
 }
 
+/* ヘッダー */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 63px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 21px;
+}
+.header-logo {
+    max-width: 198px;
+}
+
+/* ハンバーガーボタン */
+.hamburger-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+}
+.hamburger-button-bar {
+    width: 24px;
+    height: 4px;
+    background-color: #000;
+}
 
 /* ﾊﾝﾊﾞｰｶﾞｰﾒﾆｭｰ */
-.hamburger-menu-list {
+.hamburger-menu-container {
     background-color: #168352;
+    position: fixed;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    padding: 24px;
+    height: calc(100vh - 63h);
+    transition: all 0.6s;
 }
-.hamburger-menu-list li {
-    color: #fff;
+.hamburger-menu-container-active {
+    left: 0;
+    visibility: visible;
+}
+.hamburger-menu-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+    margin-bottom: 7px;
     font-size: 18px;
+}
+.hamburger-menu-list li a {
+    color: #fff;
+}
+
+/* カバー */
+.cover {
+    margin-top: 60px;
+    width: 358px;
+    margin: auto;
 }
 
 /* ｷｬｯﾁｺﾋﾟｰ*/
@@ -30,9 +93,9 @@ li {
     font-size: 28px;
     font-weight: bold;
 }
+
 .cover-text {
     color: #000;
     font-size: 15px;
     font-weight: lighter;
 }
-
