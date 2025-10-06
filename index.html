@@ -49,7 +49,7 @@
         <div class="hamburger-menu-container">
             <nav class="hamburger-menu-nav">
                 <ul class="hamburger-menu-list">
-                    <li><a href="/">トップ</a></li>
+                    <li class="hide-on-pc"><a href="/">トップ</a></li>
                     <li><a href="/price">価格・スペック</a></li>
                     <li><a href="/faq">よくあるご質問</a></li>
                 </ul>
@@ -63,7 +63,10 @@
                 <p class="cover-catch">持続可能な農業を目指す</p>
                 <p class="cover-text">キラメキファームは革新的デザインの農業機器で未来の農業を実現。ビッグデータ・自動運転ロボット・リジェネラティブ農業で環境に優しい効率化を目指す。</p>
             </div>
-            <img src="assets/image/top_cover_sp.@2x.jpg" alt="">
+            <picture>
+                <source srcset="assets/image/top_cover_pc.jpg" media="(min-width: 768px)">
+                <img src="assets/image/top_cover_sp.@2x.jpg" alt="">
+            </picture>
         </div>
 
         <!-- about us -->
@@ -73,15 +76,17 @@
                 <h2>私たちについて</h2>
             </div>
             <div class="content-about">
-                <div class="content-about-text">
-                    <p class="content-about-title">キラメキファームは、これからの農業を次世代の子どもたちに残すために創設されたイノベーションカンパニーです。</p>
-                    <p class="content-about-comment">
-                        キラメキファームは革新的デザインと最新技術を活用した農業機器メーカーです。未来の農業を実現するために、ビッグデータを駆使して省エネルギー・効率化を実現し、自動運転技術を搭載したロボットで一年中稼働することができる機器を提供します。リジェネラティブ農業を実現する技術を用いて、持続可能な農業システムをサポートします。私たちの社是は、次世代の子供たちに豊かな地球環境を残すこと。イノベーションを起こすことで農業に新たな価値を生み出し、地球環境保全に貢献することを目指しています。
-                    </p>
-                </div>
-                <!-- <div class="content-about-img">
+                <div class="content-about-img-overlay">
                     <img src="assets//image/about_us_sp@2x.jpg" alt="">
-                </div> -->
+                    <div class="content-about-text">
+                        <p class="content-about-title">キラメキファームは、これからの農業を次世代の子どもたちに残すために<spam class="sp-block">
+                                創設されたイノベーションカンパニーです。</spam>
+                        </p>
+                        <p class="content-about-comment">
+                            キラメキファームは革新的デザインと最新技術を活用した農業機器メーカーです。未来の農業を実現するために、ビッグデータを駆使して省エネルギー・効率化を実現し、自動運転技術を搭載したロボットで一年中稼働することができる機器を提供します。リジェネラティブ農業を実現する技術を用いて、持続可能な農業システムをサポートします。私たちの社是は、次世代の子供たちに豊かな地球環境を残すこと。イノベーションを起こすことで農業に新たな価値を生み出し、地球環境保全に貢献することを目指しています。
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
