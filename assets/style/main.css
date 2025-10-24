@@ -62,7 +62,7 @@ section {
     .header {
         left: 0;
         right: 0;
-        top: 26px;
+        top: 28px;
         max-width: 1200px;
         margin: auto;
     }
@@ -74,7 +74,7 @@ section {
 
 @media (min-width: 768px) {
     .header-logo {
-        max-width: 260px;
+        max-width: 263px;
     }
 }
 
@@ -249,7 +249,7 @@ section {
     .about {
         max-width: 970px;
         margin: auto;
-        padding-top: 56px;
+        padding-top: 58px;
     }
 }
 
@@ -286,7 +286,7 @@ section {
 @media (min-width: 768px) {
     .container-title h2 {
         font-size: 28px;
-        margin-top: 6px;
+        margin-top: 6.2px;
     }
 }
 
@@ -349,8 +349,7 @@ section {
 @media (min-width: 768px) {
     .content-about-title {
         font-size: 20px;
-        /* margin-left: 66px;
-        margin-right: 124px; */
+margin-bottom: 27px;
     }
 }
 
@@ -367,7 +366,6 @@ section {
 @media (min-width: 768px) {
     .content-about-comment {
         padding: 0;
-        margin-top: 26px;
         padding-right: 65px;
     }
 }
@@ -475,7 +473,7 @@ section {
 
 @media (min-width: 768px) {
     .products .container-title h2 {
-        margin-top: 9px;
+        margin-top: 8px;
     }
 }
 
@@ -483,6 +481,21 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .products-content {
+        gap: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .products-content-pc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 50px
+    }
 }
 
 .products-content-box {
@@ -494,8 +507,44 @@ section {
     gap: 17px;
 }
 
+@media (min-width: 768px) {
+    .products-content-box {
+        flex: 1;
+        align-items: flex-start;
+        padding-top: 25px;
+        padding-left: 30px;
+        padding-bottom: 22px;
+        gap: 31px;
+    }
+}
+
+@media (min-width: 768px) {
+    .three_row .products-content-box {
+        padding-top: 20px;
+        padding-left: 24px;
+        padding-bottom: 20px;
+        gap: 18px;
+    }
+}
+
 .products-content-box img {
     width: 100px;
+}
+
+@media (min-width: 768px) {
+    .products-content-box img {
+        width: 100%;
+        width: 133px;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .three_row .products-content-box img {
+        width: 100%;
+        width: 110px;
+        height: auto;
+    }
 }
 
 .products-content-box P {
@@ -504,6 +553,28 @@ section {
     color: #fff;
     max-width: 180px;
     padding-top: 18px;
+}
+
+@media (min-width: 768px) {
+    .products-content-box P {
+        font-size: 24px;
+        padding-top: 22px;
+        max-width: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .three_row img {
+        width: 100%;
+        width: 113px;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .three_row p {
+        font-size: 20px;
+    }
 }
 
 .break-line {
@@ -517,6 +588,32 @@ section {
     background-color: #f3f9f6;
 }
 
+@media (min-width: 768px) {
+.case {
+        margin-top: 63px;
+}
+}
+
+@media (min-width: 768px) {
+    .container-title-case {
+        margin-top: 4px;
+    }
+}
+
+.case-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+@media (min-width: 768px) {
+    .case-content {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1168px;
+        margin: auto;
+    }
+
 .case-content-box {
     color: #09947b;
     font-size: 18px;
@@ -525,15 +622,15 @@ section {
     margin: auto;
 }
 
+@media (min-width: 768px) {
+.case-content-box ing {
+    width: 100%;
+}
+}
+
 .case-content-box p {
     margin-top: 8px;
     padding-left: 2px;
-}
-
-.case-content {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
 }
 
 .case-content-box .naoshi {
