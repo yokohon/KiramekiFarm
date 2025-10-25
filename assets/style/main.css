@@ -241,6 +241,7 @@ section {
         padding-left: 19px;
         padding-right: 37px;
         padding-top: 10px;
+        letter-spacing: 0.08px;
     }
 }
 
@@ -639,6 +640,7 @@ section {
 @media (min-width: 768px) {
 .case-content-box ing {
     width: 100%;
+    border-radius: 20px;
 }
 }
 
@@ -668,6 +670,7 @@ section {
 @media (min-width: 768px) {
 .news {
     margin-top: 4px;
+    margin-bottom: 34px;
 }
 }
 
@@ -791,6 +794,12 @@ section {
     margin-top: 57px;
 }
 
+@media (min-width: 768px) {
+.footer {
+    margin-top: 64px;
+}
+}
+
 .footer-content {
     display: flex;
     gap: 34px;
@@ -800,9 +809,25 @@ section {
     padding-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+    .footer-content {
+        margin-top: 43px;
+        gap: 41px;
+        padding-top: 36px;
+        padding-bottom: 33px;
+    }
+}
+
+
 .footer-content a {
     color: #fff;
     font-size: 13px;
+}
+
+@media (min-width: 768px) {
+    .footer-content a {
+        font-size: 15px;
+    }
 }
 
 .footer-content-price {
@@ -818,4 +843,16 @@ section {
     position: absolute;
     right: -18px;
     top: 0;
+}
+
+@media (min-width: 768px) {
+    .footer-content :first-child::after {
+        right: -23px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-content-fag {
+        letter-spacing: -0.97px;
+    }
 }
