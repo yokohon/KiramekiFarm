@@ -21,7 +21,7 @@ li {
     list-style: none;
 }
 
-section {
+.section-main {
     padding-top: 50px;
 }
 
@@ -593,10 +593,10 @@ section {
 }
 
 @media (min-width: 768px) {
-.case {
+    .case {
         margin-top: 63px;
         padding-bottom: 62px;
-}
+    }
 }
 
 @media (min-width: 768px) {
@@ -631,17 +631,17 @@ section {
 }
 
 @media (min-width: 768px) {
-.case-content-box {
-    flex: 1;
-    margin: 0;
-}
+    .case-content-box {
+        flex: 1;
+        margin: 0;
+    }
 }
 
 @media (min-width: 768px) {
-.case-content-box ing {
-    width: 100%;
-    border-radius: 20px;
-}
+    .case-content-box ing {
+        width: 100%;
+        border-radius: 20px;
+    }
 }
 
 .case-content-box p {
@@ -668,10 +668,10 @@ section {
 }
 
 @media (min-width: 768px) {
-.news {
-    margin-top: 4px;
-    margin-bottom: 34px;
-}
+    .news {
+        margin-top: 4px;
+        margin-bottom: 34px;
+    }
 }
 
 .news .container-title {
@@ -679,9 +679,9 @@ section {
 }
 
 @media (min-width: 768px) {
-.news .container-title {
-    margin-bottom: 31px;
-}
+    .news .container-title {
+        margin-bottom: 31px;
+    }
 }
 
 .news-content ul {
@@ -795,9 +795,9 @@ section {
 }
 
 @media (min-width: 768px) {
-.footer {
-    margin-top: 64px;
-}
+    .footer {
+        margin-top: 64px;
+    }
 }
 
 .footer-content {
@@ -855,4 +855,243 @@ section {
     .footer-content-fag {
         letter-spacing: -0.97px;
     }
+}
+
+
+/* ページをとぶ */
+/* ヘッダーロゴ位置調整 */
+.price-header {
+    padding-top: 23px;
+    padding-right: 25px;
+}
+
+/* price */
+.merchandise {
+    margin-top: 83px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.merchandise-title {
+    margin-top: 27px;
+    font-size: 30px;
+}
+
+.merchandise-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 23px;
+    margin-right: 14px;
+    margin-bottom: 0;
+    gap: 21px;
+}
+
+.merchandise-nav li {
+    font-size: 12px;
+}
+
+.estination-price {
+    margin-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* padding-bottom: 26px; */
+    margin-bottom: 59px;
+}
+
+.gallery-box {
+    margin-top: 38px;
+}
+
+
+/* 2色に見える線を引く */
+.two-color-under-line {
+    position: relative;
+}
+
+.two-color-under-line::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 0px);
+    height: 2px;
+    background-color: #ddd;
+    bottom: -13px;
+    left: 0;
+    border-left: 50px solid #168352;
+}
+
+.price h3 {
+    font-size: 22px;
+    font-weight: 700;
+    /* margin-top: 31.8px */
+}
+
+
+.price h4 {
+    font-size: 16px;
+}
+
+/* dots */
+.slick-dots {
+    bottom: 2px;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+    color: #eee;
+}
+
+.slick-dots li {
+    margin: 0;
+    width: 15px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #168352;
+}
+
+/* 特徴 */
+.operation {
+    margin: 0;
+}
+
+.operation-box {
+    margin-top: 37px;
+}
+
+.operation-box p {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 8px;
+    margin-right: 1px;
+}
+
+.operation-box-second {
+    line-break: anywhere;
+    margin-top: 34px;
+}
+
+.operation-box-third {
+    margin-top: 33px;
+}
+
+/* 小売価格 */
+.retail {
+    margin: 0;
+    margin-top: 54px;
+}
+
+.list-price {
+    font-family: "Montserrat";
+    font-size: 33px;
+    font-weight: 700;
+    margin-top: 22px;
+    letter-spacing: -0.525px;
+}
+
+.list-price span {
+    font-size: 18px;
+    padding-left: 9.4px;
+}
+
+/* スペック  */
+
+.specs {
+    margin: 0;
+    margin-top: 47px;
+}
+
+.aircraft .specs-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+    position: relative;
+    padding-left: 18px;
+    /* ボーダー分のスペース */
+}
+
+.aircraft .specs-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    /* 左端からの距離 */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    height: 28px;
+    background-color: #168352;
+}
+
+.aircraft .specs-list {
+    margin-top: 20px;
+    border: 2px solid #f5f5f5;
+}
+
+.specs-list dt {
+    background-color: #f5f5f5;
+}
+
+.specs-list dt {
+    padding-left: 18px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+}
+
+.specs-list dd {
+    margin: 0;
+    padding-left: 18px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+/* お問い合わせ */
+.price-contact {
+    margin-top: 62px;
+}
+
+.price-contact-img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding-top: 142px;
+    padding-bottom: 142px;
+    text-align: center;
+    background-image: url(../image/bg-sp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.price-contact-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 黒50％ */
+}
+
+.btn-contact span {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 40px;
+    padding-top: 16px;
+    padding-bottom: 23px;
+    padding-left: 118px;
+    padding-right: 118px;
+    transition: 0.7s; 
+}
+
+.btn-contact a:hover {
+    color: #168352;
+    background-color: #fff;
+}
+
+.price-footer {
+    margin-top: 0;
+}
+
+.price-footer-box {
+    margin-top: 21px;
 }

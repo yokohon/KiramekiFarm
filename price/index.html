@@ -3,13 +3,207 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>価格・スペック</title>
-    <link rel="stylesheet" href="assets/style/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>持続可能な未来農業を実現 | Kirameki Farm</title>
+    <meta name="description"
+        content="Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
+
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="持続可能な未来農業を実現 | Kirameki Farm">
+    <meta property="og:description"
+        content="Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています">
+    <meta property="og:site_name" content="Kirameki Farm">
+
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+
+    <!-- bootstap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- slick -->
+    <!-- 基本構造（スライドが動くために必要） -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- 見た目の装飾（矢印・ドットなどのデザイン） -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- main.css -->
+    <link rel="stylesheet" href="/assets/style/main.css">
+
+
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <!-- ヘッダー -->
+    <header class="header price-header">
+        <h1 class="header-logo">
+            <a href="/">
+                <img src="/assets/image/header-logo@2x.png" alt="Kirameki FarmV">
+            </a>
+        </h1>
+
+        <!-- ハンバーガーボタン -->
+        <button type="button" class="hamburger-button">
+            <span class="hamburger-button-bar"></span>
+            <span class="hamburger-button-bar"></span>
+            <span class="hamburger-button-bar"></span>
+        </button>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="hamburger-menu-container">
+            <nav class="hamburger-menu-nav">
+                <ul class="hamburger-menu-list">
+                    <li class="hide-on-pc"><a href="/">トップ</a></li>
+                    <li><a href="/price">価格・スペック</a></li>
+                    <li><a href="/faq">よくあるご質問</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="price">
+        <section class="merchandise">
+            <div class="merchandise-container">
+                <picture>
+                    <source srcset="../assets/image/price_pc.png" media="(min-width: 768px)">
+                    <img src="../assets/image/price_sp.png" alt="">
+                </picture>
+                <h2 class="merchandise-title">価格・スペック</h2>
+            </div>
+        </section>
+        <nav>
+            <ol class="merchandise-nav">
+                <li><a href="">トップ</a></li>
+                <li><a href="/price">価格・スペック</a></li>
+            </ol>
+        </nav>
+
+        <!-- ギャラリー -->
+        <section class="estination-price gallery">
+            <div class="gallery-container two-color">
+                <h3 class="two-color-under-line">ギャラリー</h3>
+                <div class="gallery-box">
+                    <!-- 1枚目 -->
+                    <div>
+                        <picture>
+                            <source srcset="../assets/image/gallery_pc.png" media="(min-width: 768px)">
+                            <img src="../assets/image/gallery_sp.png" alt="">
+                        </picture>
+                    </div>
+                    <!-- 2枚目 -->
+                    <div>
+                        <img src="../assets/image/gallery_2.png.png" alt="">
+
+                    </div>
+                    <!-- 3枚目 -->
+                    <div>
+                        <img src="../assets/image/gallery_3.png.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特徴 -->
+        <search class="estination-price operation">
+            <div class="operation-container">
+                <h3 class="two-color-under-line">特長</h3>
+                <div class="operation-contents">
+                    <div class="operation-box">
+                        <picture>
+                            <source srcset="../assets/image/features_pc_1.png" media="(min-width: 768px)">
+                            <img src="../assets/image/features_sp_1.png" alt="">
+                        </picture>
+                        <p>自動操縦が可能で、短時間で大量の農作物を監視、収穫、播種、散布などの作業ができます。</p>
+                    </div>
+                    <div class="operation-box operation-box-second">
+                        <picture>
+                            <source srcset="../assets/image/features_pc_2.png" media="(min-width: 768px)">
+                            <img src="../assets/image/features_sp_2.png" alt="">
+                        </picture>
+                        <p>高精度のカメラやセンサーを搭載しており、正確な土壌・作物の情報を収集でき、水や肥料などの資源を適切に配分できます。</p>
+                    </div>
+                    <div class="operation-box operation-box-third">
+                        <picture>
+                            <source srcset="../assets/image/features_pc_3.png" media="(min-width: 768px)">
+                            <img src="../assets/image/features_sp_3.png" alt="">
+                        </picture>
+                        <p>必要な場所にだけ肥料や農薬を散布することができます。これにより、農薬や肥料の過剰使用が抑えられ、環境負荷やコスト削減に繋がります。</p>
+                    </div>
+                </div>
+            </div>
+        </search>
+
+        <!--  小売価格 -->
+        <section class="estination-price retail">
+            <div class="retail-container">
+                <h3>メーカー希望小売価格</h3>
+                <p class="list-price">¥550,000<span>(税込)</span></p>
+            </div>
+        </section>
+
+        <!-- スペック -->
+        <section class="estination-price specs">
+            <div class="specs-container">
+                <h3 class="two-color-under-line">スペック</h3>
+                <div class="aircraft">
+                    <h4 class="specs-title">機体</h4>
+                    <dl class="specs-list">
+                        <dt>ドローン名</dt>
+                        <dd>アグリ・ファルコン</dd>
+                        <dt>製品番号</dt>
+                        <dd>AGF-100</dd>
+                        <dt>飛行時間</dt>
+                        <dd>60 分</dd>
+                        <dt>最大積載量</dt>
+                        <dd>5 kg</dd>
+                        <dt>操作距離</dt>
+                        <dd>3 km</dd>
+                        <dt>機体重量</dt>
+                        <dd>8 kg</dd>
+                        <dt>機体寸法</dt>
+                        <dd>150 x 150 x 40 cm</dd>
+                        <dt>機能・特徴</dt>
+                        <dd>自動操縦、植物生育モニタリング、農薬散布</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="price-contact">
+            <div class="price-contact-img">
+                <div class="btn-contact">
+                    <a href=""><span>お問い合わせ</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer price-footer">
+        <div class="footer-content price-footer-box">
+            <a class="footer-content-price" href="/price">価格・スペック</a>
+            <a class="footer-content-fag" href="/faq">よくあるご質問</a>
+        </div>
+    </footer>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- main.js -->
+    <script src="/assets/script/main.js"></script>
+
 </body>
+
+</html>
