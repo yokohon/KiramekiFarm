@@ -13,7 +13,7 @@ $(window).on('resize', function () {
 // スリック
 $('.gallery-box').slick({
   infinite: true,
-  slidesToShow: 3,      // PCで3枚表示
+  slidesToShow: 1,      // PCで3枚表示
   slidesToScroll: 1,
   arrows: true,         // 矢印ナビゲーションON
   dots: true,           // 下部のドットON

@@ -60,7 +60,7 @@
         <!-- ハンバーガーメニュー -->
         <div class="hamburger-menu-container">
             <nav class="hamburger-menu-nav">
-                <ul class="hamburger-menu-list">
+                <ul class="hamburger-menu-list hamburger-menu-list-price">
                     <li class="hide-on-pc"><a href="/">トップ</a></li>
                     <li><a href="/price">価格・スペック</a></li>
                     <li><a href="/faq">よくあるご質問</a></li>
@@ -79,109 +79,129 @@
                 <h2 class="merchandise-title">価格・スペック</h2>
             </div>
         </section>
-        <nav>
+        <nav class="breadcrumbs">
             <ol class="merchandise-nav">
                 <li><a href="">トップ</a></li>
                 <li><a href="/price">価格・スペック</a></li>
             </ol>
         </nav>
 
-        <!-- ギャラリー -->
-        <section class="estination-price gallery">
-            <div class="gallery-container two-color">
-                <h3 class="two-color-under-line">ギャラリー</h3>
-                <div class="gallery-box">
-                    <!-- 1枚目 -->
-                    <div>
-                        <picture>
-                            <source srcset="../assets/image/gallery_pc.png" media="(min-width: 768px)">
-                            <img src="../assets/image/gallery_sp.png" alt="">
-                        </picture>
-                    </div>
-                    <!-- 2枚目 -->
-                    <div>
-                        <img src="../assets/image/gallery_2.png.png" alt="">
+        <div class="products-service-carousel">
 
-                    </div>
-                    <!-- 3枚目 -->
-                    <div>
-                        <img src="../assets/image/gallery_3.png.png" alt="">
+            <!-- ギャラリー -->
+            <section class="estination-price gallery">
+                <div class="gallery-container two-color">
+                    <h3 class="two-color-under-line">ギャラリー</h3>
+                    <div class="gallery-box">
+                        <!-- 1枚目 -->
+                        <div>
+                            <picture>
+                                <source srcset="../assets/image/gallery_pc.png" media="(min-width: 768px)">
+                                <img src="../assets/image/gallery_sp.png" alt="">
+                            </picture>
+                        </div>
+                        <!-- 2枚目 -->
+                        <div>
+                            <img src="../assets/image/gallery_2.png.png" alt="">
+
+                        </div>
+                        <!-- 3枚目 -->
+                        <div>
+                            <img src="../assets/image/gallery_3.png.png" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- 特徴 -->
-        <search class="estination-price operation">
-            <div class="operation-container">
-                <h3 class="two-color-under-line">特長</h3>
-                <div class="operation-contents">
-                    <div class="operation-box">
-                        <picture>
-                            <source srcset="../assets/image/features_pc_1.png" media="(min-width: 768px)">
-                            <img src="../assets/image/features_sp_1.png" alt="">
-                        </picture>
-                        <p>自動操縦が可能で、短時間で大量の農作物を監視、収穫、播種、散布などの作業ができます。</p>
-                    </div>
-                    <div class="operation-box operation-box-second">
-                        <picture>
-                            <source srcset="../assets/image/features_pc_2.png" media="(min-width: 768px)">
-                            <img src="../assets/image/features_sp_2.png" alt="">
-                        </picture>
-                        <p>高精度のカメラやセンサーを搭載しており、正確な土壌・作物の情報を収集でき、水や肥料などの資源を適切に配分できます。</p>
-                    </div>
-                    <div class="operation-box operation-box-third">
-                        <picture>
-                            <source srcset="../assets/image/features_pc_3.png" media="(min-width: 768px)">
-                            <img src="../assets/image/features_sp_3.png" alt="">
-                        </picture>
-                        <p>必要な場所にだけ肥料や農薬を散布することができます。これにより、農薬や肥料の過剰使用が抑えられ、環境負荷やコスト削減に繋がります。</p>
+            <!-- 特徴 -->
+            <search class="estination-price operation">
+                <div class="operation-container">
+                    <h3 class="two-color-under-line">特長</h3>
+                    <div class="operation-contents">
+                        <div class="operation-box">
+                            <picture>
+                                <source srcset="../assets/image/features_pc_1.png" media="(min-width: 768px)">
+                                <img src="../assets/image/features_sp_1.png" alt="">
+                            </picture>
+                            <p>自動操縦が可能で、短時間で大量の農作物を監視、収穫、播種、散布などの作業ができます。</p>
+                        </div>
+                        <div class="operation-box operation-box-second">
+                            <picture>
+                                <source srcset="../assets/image/features_pc_2.png" media="(min-width: 768px)">
+                                <img src="../assets/image/features_sp_2.png" alt="">
+                            </picture>
+                            <p>高精度のカメラやセンサーを搭載しており、正確な土壌・作物の情報を収集でき、水や肥料などの資源を適切に配分できます。</p>
+                        </div>
+                        <div class="operation-box operation-box-third">
+                            <picture>
+                                <source srcset="../assets/image/features_pc_3.png" media="(min-width: 768px)">
+                                <img src="../assets/image/features_sp_3.png" alt="">
+                            </picture>
+                            <p>必要な場所にだけ肥料や農薬を散布することができます。これにより、農薬や肥料の過剰使用が抑えられ、環境負荷やコスト削減に繋がります。</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </search>
+            </search>
 
-        <!--  小売価格 -->
-        <section class="estination-price retail">
-            <div class="retail-container">
-                <h3>メーカー希望小売価格</h3>
-                <p class="list-price">¥550,000<span>(税込)</span></p>
-            </div>
-        </section>
-
-        <!-- スペック -->
-        <section class="estination-price specs">
-            <div class="specs-container">
-                <h3 class="two-color-under-line">スペック</h3>
-                <div class="aircraft">
-                    <h4 class="specs-title">機体</h4>
-                    <dl class="specs-list">
-                        <dt>ドローン名</dt>
-                        <dd>アグリ・ファルコン</dd>
-                        <dt>製品番号</dt>
-                        <dd>AGF-100</dd>
-                        <dt>飛行時間</dt>
-                        <dd>60 分</dd>
-                        <dt>最大積載量</dt>
-                        <dd>5 kg</dd>
-                        <dt>操作距離</dt>
-                        <dd>3 km</dd>
-                        <dt>機体重量</dt>
-                        <dd>8 kg</dd>
-                        <dt>機体寸法</dt>
-                        <dd>150 x 150 x 40 cm</dd>
-                        <dt>機能・特徴</dt>
-                        <dd>自動操縦、植物生育モニタリング、農薬散布</dd>
-                    </dl>
+            <!--  小売価格 -->
+            <section class="estination-price retail">
+                <div class="retail-container">
+                    <h3>メーカー希望小売価格</h3>
+                    <p class="list-price">¥550,000<span>(税込)</span></p>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <!-- スペック -->
+            <section class="estination-price specs">
+                <div class="specs-container">
+                    <h3 class="two-color-under-line">スペック</h3>
+                    <div class="aircraft">
+                        <h4 class="specs-title">機体</h4>
+                        <dl class="specs-list">
+                            <div class="specs-row">
+                                <dt>ドローン名</dt>
+                                <dd>アグリ・ファルコン</dd>
+                            </div>
+                            <div class="specs-row">
+                                <dt>製品番号</dt>
+                                <dd>AGF-100</dd>
+                            </div>
+                            <div class="specs-row">
+                                <dt>飛行時間</dt>
+                                <dd>60 分</dd>
+                            </div>
+                            <div class="specs-row">
+                                <dt>最大積載量</dt>
+                                <dd>5 kg</dd>
+                            </div>
+                            <div class="specs-row">
+                                <dt>操作距離</dt>
+                                <dd>3 km</dd>
+                            </div>
+                            <div class="specs-row">
+                                <dt>機体重量</dt>
+                                <dd>8 kg</dd>
+                            </div>
+                            <div class="specs-row">
+                                <dt>機体寸法</dt>
+                                <dd>150 x 150 x 40 cm</dd>
+                            </div>
+                            <div class="specs-row">
+                                <dt>機能・特徴</dt>
+                                <dd>自動操縦、植物生育モニタリング、農薬散布</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+
+        </div>
 
 
         <section class="price-contact">
             <div class="price-contact-img">
                 <div class="btn-contact">
-                    <a href=""><span>お問い合わせ</span></a>
+                    <a href="/contact"><span>お問い合わせ</span></a>
                 </div>
             </div>
         </section>

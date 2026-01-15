@@ -152,6 +152,7 @@ li {
     .hamburger-menu-list {
         flex-direction: row;
         column-gap: 38px;
+        margin-bottom: 8px;
     }
 }
 
@@ -860,10 +861,12 @@ li {
 
 /* ページをとぶ */
 /* ヘッダーロゴ位置調整 */
-.price-header {
-    padding-top: 23px;
-    padding-right: 25px;
+@media (min-width: 768px) {
+    .hamburger-menu-list-price {
+        margin-bottom: 8px;
+    }
 }
+
 
 /* price */
 .merchandise {
@@ -872,9 +875,48 @@ li {
     padding-right: 16px;
 }
 
+@media (min-width: 768px) {
+    .merchandise {
+        display: block;
+        width: 1230px;
+        margin: auto;
+        padding-top: 154px;
+    }
+}
+
+@media (min-width: 768px) {
+    .merchandise-container {
+        position: relative;
+    }
+}
+
 .merchandise-title {
     margin-top: 27px;
     font-size: 30px;
+}
+
+@media (min-width: 768px) {
+    .merchandise-title {
+        margin: 0;
+        font-size: 36px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        border-radius: 0 40px 0 0;
+        padding-left: 40px;
+        padding-right: 37px;
+        padding-top: 34px;
+        padding-bottom: 35px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .breadcrumbs {
+        width: 1232px;
+        margin: auto;
+    }
 }
 
 .merchandise-nav {
@@ -886,22 +928,63 @@ li {
     gap: 21px;
 }
 
+@media (min-width: 768px) {
+    .merchandise-nav {
+        margin-top: 19px;
+    }
+}
+
 .merchandise-nav li {
     font-size: 12px;
 }
 
+@media (min-width: 768px) {
+    .products-service-carousel {
+        max-width: 834px;
+        margin: auto;
+    }
+}
+
 .estination-price {
-    margin-top: 32px;
+    margin-top: 57px;
     padding-left: 16px;
     padding-right: 16px;
-    /* padding-bottom: 26px; */
     margin-bottom: 59px;
 }
 
+.price h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .price h3 {
+        font-size: 28px;
+    }
+}
+
+.price h4 {
+    font-size: 16px;
+}
+
+/* ｷﾞｬﾗりー */
 .gallery-box {
     margin-top: 38px;
 }
 
+@media (min-width: 768px) {
+    .gallery-box {
+        margin-top: 58px;
+    }
+}
+
+@media (min-width: 768px) {
+    .gallery-box img {
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+}
 
 /* 2色に見える線を引く */
 .two-color-under-line {
@@ -914,25 +997,27 @@ li {
     width: calc(100% - 0px);
     height: 2px;
     background-color: #ddd;
-    bottom: -13px;
+    bottom: -21px;
     left: 0;
     border-left: 50px solid #168352;
 }
 
-.price h3 {
-    font-size: 22px;
-    font-weight: 700;
-    /* margin-top: 31.8px */
-}
-
-
-.price h4 {
-    font-size: 16px;
+@media (min-width: 768px) {
+    .two-color-under-line::after {
+        bottom: -24px;
+        border-left: 100px solid #168352;
+    }
 }
 
 /* dots */
 .slick-dots {
     bottom: 2px;
+}
+
+@media (min-width: 768px) {
+    .slick-dots {
+        bottom: 15px;
+    }
 }
 
 .slick-dots li button:before {
@@ -949,9 +1034,23 @@ li {
     color: #168352;
 }
 
+
 /* 特徴 */
 .operation {
     margin: 0;
+}
+
+@media (min-width: 768px) {
+    .operation {
+        margin-top: 68px;
+    }
+}
+
+@media (min-width: 768px) {
+    .operation-contents {
+        display: flex;
+        gap: 31px;
+    }
 }
 
 .operation-box {
@@ -964,6 +1063,7 @@ li {
     margin: 0;
     margin-top: 8px;
     margin-right: 1px;
+    letter-spacing: 0.175px;
 }
 
 .operation-box-second {
@@ -975,10 +1075,38 @@ li {
     margin-top: 33px;
 }
 
+@media (min-width: 768px) {
+    .operation-box {
+        flex: 1;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .operation-box img {
+        width: 100%;
+        max-width: 247px;
+        height: auto;
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .operation-box-third p {
+        letter-spacing: -0.035px;
+    }
+}
+
 /* 小売価格 */
 .retail {
     margin: 0;
     margin-top: 54px;
+}
+
+@media (min-width: 768px) {
+    .retail {
+        margin-top: 59px;
+    }
 }
 
 .list-price {
@@ -989,16 +1117,28 @@ li {
     letter-spacing: -0.525px;
 }
 
+@media (min-width: 768px) {
+    .list-price {
+        margin-top: 42px;
+    }
+}
+
 .list-price span {
     font-size: 18px;
     padding-left: 9.4px;
 }
 
 /* スペック  */
-
 .specs {
     margin: 0;
     margin-top: 47px;
+}
+
+@media (min-width: 768px) {
+    .specs h3 {
+        margin-top: 55px;
+        letter-spacing: 0.575px;
+    }
 }
 
 .aircraft .specs-title {
@@ -1008,6 +1148,14 @@ li {
     position: relative;
     padding-left: 18px;
     /* ボーダー分のスペース */
+}
+
+@media (min-width: 768px) {
+    .aircraft .specs-title {
+        font-size: 24px;
+        margin-top: 65px;
+        /* margin-left: 32px; */
+    }
 }
 
 .aircraft .specs-title::before {
@@ -1022,19 +1170,55 @@ li {
     background-color: #168352;
 }
 
+/* @media (min-width: 768px) {
+    .aircraft .specs-title::before {
+        top: -6px;
+        height: 40px;
+    }
+} */
+
 .aircraft .specs-list {
     margin-top: 20px;
     border: 2px solid #f5f5f5;
 }
 
-.specs-list dt {
-    background-color: #f5f5f5;
+@media (min-width: 768px) {
+    .aircraft {
+        max-width: 740px;
+        margin: auto;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .aircraft .specs-list {
+        margin-top: 28px;
+    }
+}
+
+@media (min-width: 768px) {
+    .specs-row {
+        display: flex;
+        border-bottom: 1px solid #f5f5f5;
+    }
 }
 
 .specs-list dt {
+    background-color: #f5f5f5;
     padding-left: 18px;
     padding-top: 6px;
     padding-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+    .specs-list dt {
+        width: 27%;
+        background-color: #f5f5f5;
+        padding-top: 16px;
+        padding-bottom: 17.8px;
+        box-sizing: border-box;
+        font-weight: 600;
+    }
 }
 
 .specs-list dd {
@@ -1044,9 +1228,25 @@ li {
     padding-bottom: 5px;
 }
 
+@media (min-width: 768px) {
+    .specs-list dd {
+        width: 73%;
+        margin: 0;
+        padding-top: 16px;
+        padding-left: 22px;
+        box-sizing: border-box;
+    }
+}
+
 /* お問い合わせ */
 .price-contact {
     margin-top: 62px;
+}
+
+@media (min-width: 768px) {
+    .price-contact {
+        margin-top: 71px;
+    }
 }
 
 .price-contact-img {
@@ -1059,6 +1259,20 @@ li {
     background-image: url(../image/bg-sp.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    .price-contact-img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        padding-top: 187px;
+        padding-bottom: 184px;
+        text-align: center;
+        background-image: url(../image/bg_pc.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 .price-contact-img::before {
@@ -1080,7 +1294,7 @@ li {
     padding-bottom: 23px;
     padding-left: 118px;
     padding-right: 118px;
-    transition: 0.7s; 
+    transition: 0.7s;
 }
 
 .btn-contact a:hover {
@@ -1094,4 +1308,10 @@ li {
 
 .price-footer-box {
     margin-top: 21px;
+}
+
+@media (min-width: 768px) {
+    .price-footer-box {
+        margin-top: 0;
+    }
 }
