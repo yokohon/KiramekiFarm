@@ -408,8 +408,6 @@ li {
 @media (min-width: 768px) {
     .content-features {
         flex-direction: row;
-        /* margin-left: 117px;
-        gap: 28.4px; */
         justify-content: space-between;
         max-width: 1168px;
         margin: auto;
@@ -661,8 +659,6 @@ li {
     margin-top: 9px;
 }
 
-
-
 /* news */
 .news {
     margin-bottom: 25px;
@@ -861,6 +857,21 @@ li {
 
 /* ページをとぶ */
 /* ヘッダーロゴ位置調整 */
+
+.price-header-logo {
+    margin: 0;
+}
+
+.price-header {
+    padding-right: 25px;
+}
+
+@media (min-width: 768px) {
+    .price-header {
+        padding-right: 15px;
+    }
+}
+
 @media (min-width: 768px) {
     .hamburger-menu-list-price {
         margin-bottom: 8px;
@@ -878,7 +889,7 @@ li {
 @media (min-width: 768px) {
     .merchandise {
         display: block;
-        width: 1230px;
+        max-width: 1230px;
         margin: auto;
         padding-top: 154px;
     }
@@ -893,6 +904,14 @@ li {
 .merchandise-title {
     margin-top: 27px;
     font-size: 30px;
+}
+
+.merchandise-container picture,
+.merchandise-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
 }
 
 @media (min-width: 768px) {
@@ -914,7 +933,7 @@ li {
 
 @media (min-width: 768px) {
     .breadcrumbs {
-        width: 1232px;
+        max-width: 1232px;
         margin: auto;
     }
 }
@@ -946,10 +965,20 @@ li {
 }
 
 .estination-price {
-    margin-top: 57px;
+    margin-top: 32px;
     padding-left: 16px;
     padding-right: 16px;
     margin-bottom: 59px;
+}
+
+
+@media (min-width: 768px) {
+    .estination-price {
+        margin-top: 57px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 59px;
+    }
 }
 
 .price h3 {
@@ -978,8 +1007,17 @@ li {
     }
 }
 
+/* スライド内画像を中央寄せ */
+.gallery-box .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 @media (min-width: 768px) {
     .gallery-box img {
+        display: block;
         width: 100%;
         max-width: 800px;
         margin: auto;
@@ -997,7 +1035,7 @@ li {
     width: calc(100% - 0px);
     height: 2px;
     background-color: #ddd;
-    bottom: -21px;
+    bottom: -14px;
     left: 0;
     border-left: 50px solid #168352;
 }
@@ -1050,11 +1088,37 @@ li {
     .operation-contents {
         display: flex;
         gap: 31px;
+        justify-content: space-between;
     }
 }
 
 .operation-box {
+    flex: 1;
+    /* 均等に幅を分ける */
     margin-top: 37px;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .operation-box {
+        flex: 1;
+        margin-top: 50px;
+    }
+}
+
+.operation-box img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .operation-box img {
+        width: 100%;
+        max-width: 247px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
 }
 
 .operation-box p {
@@ -1071,23 +1135,19 @@ li {
     margin-top: 34px;
 }
 
+@media (min-width: 768px) {
+    .operation-box-second {
+        margin-top: 50px;
+    }
+}
+
 .operation-box-third {
     margin-top: 33px;
 }
 
 @media (min-width: 768px) {
-    .operation-box {
-        flex: 1;
+    .operation-box-third {
         margin-top: 50px;
-    }
-}
-
-@media (min-width: 768px) {
-    .operation-box img {
-        width: 100%;
-        max-width: 247px;
-        height: auto;
-        display: block;
     }
 }
 
@@ -1170,13 +1230,6 @@ li {
     background-color: #168352;
 }
 
-/* @media (min-width: 768px) {
-    .aircraft .specs-title::before {
-        top: -6px;
-        height: 40px;
-    }
-} */
-
 .aircraft .specs-list {
     margin-top: 20px;
     border: 2px solid #f5f5f5;
@@ -1200,6 +1253,7 @@ li {
     .specs-row {
         display: flex;
         border-bottom: 1px solid #f5f5f5;
+        align-items: stretch;
     }
 }
 
@@ -1231,7 +1285,6 @@ li {
 @media (min-width: 768px) {
     .specs-list dd {
         width: 73%;
-        margin: 0;
         padding-top: 16px;
         padding-left: 22px;
         box-sizing: border-box;
@@ -1251,7 +1304,7 @@ li {
 
 .price-contact-img {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     width: 100%;
     padding-top: 142px;
     padding-bottom: 142px;
@@ -1264,7 +1317,7 @@ li {
 @media (min-width: 768px) {
     .price-contact-img {
         position: relative;
-        z-index: 1;
+        z-index: 0;
         width: 100%;
         padding-top: 187px;
         padding-bottom: 184px;
@@ -1272,6 +1325,7 @@ li {
         background-image: url(../image/bg_pc.png);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
@@ -1281,9 +1335,11 @@ li {
     inset: 0;
     background-color: rgba(0, 0, 0, 0.5);
     /* 黒50％ */
+    z-index: 1;
+    pointer-events: none;
 }
 
-.btn-contact span {
+.btn-contact {
     display: inline-block;
     font-size: 20px;
     font-weight: 700;
@@ -1295,9 +1351,12 @@ li {
     padding-left: 118px;
     padding-right: 118px;
     transition: 0.7s;
+
+    position: relative;
+    z-index: 2;
 }
 
-.btn-contact a:hover {
+.btn-contact:hover {
     color: #168352;
     background-color: #fff;
 }
@@ -1307,11 +1366,97 @@ li {
 }
 
 .price-footer-box {
-    margin-top: 21px;
+    margin-top: 0;
+}
+
+
+
+/* ページをとぶ  faq*/
+/* ヘッダーロゴ位置調整 */
+.flex {
+    display: flex;
 }
 
 @media (min-width: 768px) {
-    .price-footer-box {
-        margin-top: 0;
+    .fag-header {
+        padding-right: 15px;
     }
+}
+
+@media (min-width: 768px) {
+    .hamburger-menu-list-fag {
+        margin-bottom: 8px;
+    }
+}
+
+.faq-merchandise-title {
+    margin-top: 11px;
+}
+
+.faq-merchandise-nav {
+    margin-top: 15px;
+}
+
+.faq-container {
+    margin-top: 36px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* アコーディオン */
+.accordion-container {
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.accordion-title {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 13px;
+}
+
+.accordion-title .label-icon {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #168352;
+}
+
+.accordion-title i {
+    font-size: 24px;
+}
+
+.accordion-box {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 17px;
+    margin-right: auto;
+}
+
+.accordion-container .accordion-subhead {
+    font-size: 11px;
+    color: #168352;
+    border: 1px solid #168352;
+    border-radius: 4px;
+
+    padding-top: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 4px;
+}
+
+.accordion-container .subhead-text {
+    display: block;
+    font-size: 16px;
+}
+
+.accordion-text {
+    display: none;
+    overflow: hidden;
 }
