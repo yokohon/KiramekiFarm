@@ -849,7 +849,7 @@ li {
 }
 
 @media (min-width: 768px) {
-    .footer-content-fag {
+    .footer-content-faq {
         letter-spacing: -0.97px;
     }
 }
@@ -1378,19 +1378,26 @@ li {
 }
 
 @media (min-width: 768px) {
-    .fag-header {
+    .faq-header {
         padding-right: 15px;
     }
 }
 
 @media (min-width: 768px) {
-    .hamburger-menu-list-fag {
+    .hamburger-menu-list-faq {
         margin-bottom: 8px;
     }
 }
 
 .faq-merchandise-title {
     margin-top: 11px;
+}
+
+@media (min-width: 768px) {
+    .faq-merchandise-title {
+        padding-top: 23px;
+        padding-bottom: 32px;
+    }
 }
 
 .faq-merchandise-nav {
@@ -1403,18 +1410,42 @@ li {
     padding-right: 16px;
 }
 
+@media (min-width: 768px) {
+    .faq-container {
+        margin-top: 57px;
+    }
+}
+
 /* アコーディオン */
 .accordion-container {
     border: 1px solid #ccc;
     border-radius: 16px;
     padding-left: 22px;
     padding-right: 22px;
+    padding-bottom: 17px;
+    margin-bottom: 24.3px;
+}
+
+@media (min-width: 768px) {
+    .accordion-container {
+        max-width: 800px;
+        margin: auto;
+        padding-left: 31px;
+        padding-right: 30px;
+        margin-bottom: 25.3px;
+    }
 }
 
 .accordion-title {
     display: flex;
     align-items: flex-start;
     margin-top: 13px;
+}
+
+@media (min-width: 768px) {
+    .accordion-title {
+        margin-top: 12px;
+    }
 }
 
 .accordion-title .label-icon {
@@ -1437,6 +1468,24 @@ li {
     align-items: flex-start;
     margin-left: 17px;
     margin-right: auto;
+
+    margin-top: 5.1px;
+}
+
+@media (min-width: 768px) {
+    .accordion-box {
+        margin-left: 15px;
+    }
+}
+
+.accordion-box-dounyuu {
+    margin-top: 4px;
+}
+
+
+.subhead {
+    display: flex;
+    gap: 9px;
 }
 
 .accordion-container .accordion-subhead {
@@ -1445,18 +1494,84 @@ li {
     border: 1px solid #168352;
     border-radius: 4px;
 
-    padding-top: 2px;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-bottom: 4px;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 11px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+
+    min-width: 100px;
+    text-align: center;
+}
+
+.accordion-container .accordion-subhead-W {
+    padding-right: 17px;
+    padding-left: 16px;
 }
 
 .accordion-container .subhead-text {
     display: block;
     font-size: 16px;
+
+    letter-spacing: 0.05px;
+    padding-right: 5px;
 }
 
+@media (min-width: 768px) {
+    .accordion-container .subhead-text {
+        font-size: 18px;
+        margin-top: 9px;
+    }
+}
+
+.accordion-container .subhead-text-menkyo {
+    line-break: anywhere;
+}
+
+.accordion-container .subhead-text-box {
+    padding-right: 20px;
+}
+
+/* A */
 .accordion-text {
     display: none;
     overflow: hidden;
+
+    margin-top: 2px;
+    letter-spacing: 0.187px;
+}
+
+@media (min-width: 768px) {
+    .accordion-text {
+        letter-spacing: 0;
+        line-break: anywhere;
+        margin-top: 16px;
+    }
+}
+
+.accordion-text-kakaku {
+    margin-top: 0;
+    padding-left: 3px;
+}
+
+@media (min-width: 768px) {
+    .accordion-text-kakaku {
+        letter-spacing: 0;
+        line-break: anywhere;
+        margin-top: 16px;
+    }
+}
+
+.accordion-text-box {
+    line-break: anywhere;
+}
+
+.footer-faq {
+    margin-top: 174px;
+}
+
+@media (min-width: 768px) {
+    .footer-faq {
+        margin-top: 75px;
+    }
 }

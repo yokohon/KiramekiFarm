@@ -16,3 +16,4 @@ $('.gallery-box').slick({
         }
     ]
 });
+
