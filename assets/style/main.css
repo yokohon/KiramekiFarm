@@ -165,7 +165,12 @@ li {
         color: #333;
         font-size: 16px;
     }
+
+    .hamburger-menu-list li a.current-page {
+        color: #168352;
+    }
 }
+
 
 /* カバー */
 .cover {
@@ -345,14 +350,12 @@ li {
     font-size: 18px;
     font-weight: 700;
     word-break: break-all;
-    /* letter-spacing: 0.257px; */
     letter-spacing: 0.059px;
 }
 
 @media (min-width: 768px) {
     .content-about-title {
         font-size: 20px;
-        /* margin-bottom: 29px; */
     }
 }
 
@@ -382,8 +385,6 @@ li {
 
 @media (min-width: 768px) {
     .features {
-        /* max-width: 1200px;
-        margin: auto; */
         margin-top: 68px;
         padding-bottom: 64px;
     }
@@ -447,7 +448,6 @@ li {
 
 @media (min-width: 768px) {
     .content-features-box P {
-        /* padding: 0; */
         padding-top: 12px;
         padding-left: 21px;
         letter-spacing: 1.107px;

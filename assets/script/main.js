@@ -10,15 +10,3 @@ $(window).on('resize', function () {
   hamburger.removeClass('hamburger-menu-container-active');
 });
 
-
-
-// アコーディオン
-// $(function () {
-//     $('.accordion-title').on('click', function () {
-//         $(this).next('.accordion-text').slideToggle();
-//         $(this).toggleClass('open');
-//     });
-// });
-
-
-
