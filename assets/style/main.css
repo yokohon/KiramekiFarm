@@ -521,6 +521,16 @@ li {
 }
 
 @media (min-width: 768px) {
+    .products-content-box:hover {
+        background-color: #dffaec;
+    }
+
+    .products-content-box:hover P {
+        color: #168352;
+    }
+}
+
+@media (min-width: 768px) {
     .three_row .products-content-box {
         padding-top: 20px;
         padding-left: 24px;
@@ -681,7 +691,7 @@ li {
     }
 }
 
-.news-content ul {
+.news-content li {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     max-width: 360px;
@@ -689,7 +699,7 @@ li {
 }
 
 @media (min-width: 768px) {
-    .news-content ul {
+    .news-content li {
         display: flex;
         max-width: 900px;
         gap: 21px;
@@ -771,6 +781,13 @@ li {
     background-color: #066655;
     border-radius: 33px;
     overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .news-btn:hover {
+        padding-bottom: 2px;
+        margin-top: 39px;
+    }
 }
 
 .news-btn .inner {

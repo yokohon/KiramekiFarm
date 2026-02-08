@@ -1,4 +1,4 @@
-
+// アコーディオン アイコンを交互に表示
 $('.accordion-title').click(function () {
     $(this).next('dd').stop().slideToggle();
 
